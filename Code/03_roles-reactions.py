@@ -67,4 +67,4 @@ intents.members = True
 
 client = MyRobot(intents=intents)
 
-client.run('TOKEN')
+client.run('ODg5MTk2NzY0MDk4MzYzNDMy.YUdvBQ.ptl55T0jP0wJpwZcEjnXK7NDb_0')

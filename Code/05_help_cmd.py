@@ -49,12 +49,23 @@ async def help(ctx):
         inline=False
     )
     embed.add_field(
+        name='!ban',
+        value='Just ban a user',
+        inline=False
+    )
+
+    embed.add_field(
         name='!kill',
         value='Become a killer',
+        inline=False
+    )
+    embed.add_field(
+        name='!hello',
+        value='Say hello to bot',
         inline=False
     )
 
     await ctx.send(embed=embed)
 
-bot.run('TOKEN')
-client.run('TOKEN')
+bot.run('ODg5MTk2NzY0MDk4MzYzNDMy.YUdvBQ.ptl55T0jP0wJpwZcEjnXK7NDb_0')
+client.run('ODg5MTk2NzY0MDk4MzYzNDMy.YUdvBQ.ptl55T0jP0wJpwZcEjnXK7NDb_0')

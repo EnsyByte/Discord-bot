@@ -21,6 +21,16 @@ bot.remove_command('help')
 
 
 @bot.command()
+async def hello(ctx):
+    """
+    Example: !hello
+    Bot says hello to you
+    """
+    author = ctx.author
+    await ctx.send(f'Hello {author}!')
+
+
+@bot.command()
 async def hit(ctx, per):
     """
     Example: !hit Justin
@@ -61,5 +71,5 @@ async def info(ctx):
     await ctx.send(ctx.message.id)
 
 
-bot.run('TOKEN')
-client.run('TOKEN')
+bot.run('ODg5MTk2NzY0MDk4MzYzNDMy.YUdvBQ.ptl55T0jP0wJpwZcEjnXK7NDb_0')
+client.run('ODg5MTk2NzY0MDk4MzYzNDMy.YUdvBQ.ptl55T0jP0wJpwZcEjnXK7NDb_0')

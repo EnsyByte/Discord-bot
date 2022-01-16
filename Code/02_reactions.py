@@ -19,7 +19,7 @@ async def on_message(message):
         await message.add_reaction('\U0001F620')
     elif message.content == '!kiss' or '!kissing' or '!blow a kiss':
         await message.add_reaction('\U0001F618')
-    elif message.content == 'sad' or '!sadness' or '!cry' '!crying' or '!tear':
+    elif message.content == '!sad' or '!sadness' or '!cry' '!crying' or '!tear':
         await message.content.add_reaction('\U0001F622')
 
 
@@ -37,4 +37,4 @@ async def on_reaction_add(reaction, user):
     await reaction.message.channel.send(f'{user} reacted with {reaction.emoji}')
 
 
-client.run('TOKEN')
+client.run('ODg5MTk2NzY0MDk4MzYzNDMy.YUdvBQ.ptl55T0jP0wJpwZcEjnXK7NDb_0')

@@ -1,5 +1,4 @@
 import discord
-from discord.ext import commands
 
 client = discord.Client()
 
@@ -14,11 +13,8 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    bot = commands.Bot(command_prefix='!')
-    bot.remove_command('help')
-
     if message.content == 'hello':
         await message.channel.send('Greetings tester!')
 
 
-client.run('TOKEN')
+client.run('ODg5MTk2NzY0MDk4MzYzNDMy.YUdvBQ.ptl55T0jP0wJpwZcEjnXK7NDb_0')
