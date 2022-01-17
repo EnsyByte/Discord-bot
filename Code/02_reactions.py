@@ -13,14 +13,10 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    if message.content == '!happy' or '!smile' or '!smiley face' '!happy face':
-        await message.add_reaction('\U0001F600')
-    elif message.content == '!angry' or '!anger' or '!mad':
+    if message.content == '!angry':
         await message.add_reaction('\U0001F620')
-    elif message.content == '!kiss' or '!kissing' or '!blow a kiss':
-        await message.add_reaction('\U0001F618')
-    elif message.content == '!sad' or '!sadness' or '!cry' '!crying' or '!tear':
-        await message.content.add_reaction('\U0001F622')
+    elif message.content == '!happy':
+        await message.add_reaction('\U0001F600')
 
 
 @client.event

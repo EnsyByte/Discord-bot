@@ -5,19 +5,19 @@ from discord.ext import commands
 client = discord.Client()
 
 
-@client.event
+bot = commands.Bot(command_prefix='!')
+bot.remove_command('help')
+
+
+@bot.event
 async def on_ready():
     print('Connected!')
 
 
-@client.event
+@bot.event
 async def on_message(message):
     if message.author == client.user:
         return
-
-
-bot = commands.Bot(command_prefix='!')
-bot.remove_command('help')
 
 
 @bot.command()

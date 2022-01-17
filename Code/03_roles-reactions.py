@@ -15,7 +15,7 @@ class MyRobot(discord.Client):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.target_message_id = 905910178652758027
+        self.target_message_id = 932659947110551662
 
     async def on_ready(self):
         print('Connected!')
@@ -30,14 +30,14 @@ class MyRobot(discord.Client):
 
         guild = client.get_guild(payload.guild_id)
 
-        if payload.emoji.name == '💯':
-            role = discord.utils.get(guild.roles, name='100% guys')
+        if payload.emoji.name == '😎':
+            role = discord.utils.get(guild.roles, name='Cool guys')
             await payload.member.add_roles(role)
-        elif payload.emoji.name == '🐼':
-            role = discord.utils.get(guild.roles, name='Panda guys')
+        elif payload.emoji.name == '🧐':
+            role = discord.utils.get(guild.roles, name='Clever guys')
             await payload.member.add_roles(role)
-        elif payload.emoji.name == '🍴':
-            role = discord.utils.get(guild.roles, name='Knife and fork guys')
+        elif payload.emoji.name == '😶':
+            role = discord.utils.get(guild.roles, name='Normal guys')
             await payload.member.add_roles(role)
 
     async def on_raw_reaction_remove(self, payload):
@@ -51,14 +51,14 @@ class MyRobot(discord.Client):
         guild = client.get_guild(payload.guild_id)
         member = guild.get_member(payload.user_id)
 
-        if payload.emoji.name == '💯':
-            role = discord.utils.get(guild.roles, name='100% guys')
+        if payload.emoji.name == '😎':
+            role = discord.utils.get(guild.roles, name='Cool guys')
             await member.remove_roles(role)
-        elif payload.emoji.name == '🐼':
-            role = discord.utils.get(guild.roles, name='Panda guys')
+        elif payload.emoji.name == '🧐':
+            role = discord.utils.get(guild.roles, name='Clever guys')
             await member.remove_roles(role)
-        elif payload.emoji.name == '🍴':
-            role = discord.utils.get(guild.roles, name='Knife and fork guys')
+        elif payload.emoji.name == '😶':
+            role = discord.utils.get(guild.roles, name='Normal guys')
             await member.remove_roles(role)
 
 
