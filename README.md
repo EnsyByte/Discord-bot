@@ -1,5 +1,5 @@
 
-<h3 align="center">Разработка Discord-бота</h3>
+<h1 align="center">Разработка Discord-бота</h1>
 
 ## Инструкция
 
