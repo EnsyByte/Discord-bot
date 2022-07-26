@@ -13,7 +13,7 @@ discord.py==1.7.3
 entrypoints==0.3
 idna==3.3
 ipykernel==6.7.0
-ipython==8.0.0
+ipython==8.0.1
 jedi==0.18.1
 jupyter-client==7.1.1
 jupyter-core==4.9.1
