@@ -14,3 +14,5 @@ pip3 install -r requirements.txt
 ### Разное
 
 *Для лучшего понимания, на моём канале есть ролик, где показана первоначальная настройка Discord-бота с объяснениями: https://youtu.be/oVEZ5c0ym1M*
+
+<p align="right">(<a href="#top">back to top</a>)</p>
